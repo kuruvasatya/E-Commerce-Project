@@ -1,0 +1,18 @@
+<div class="container">
+    <table class="table">
+        <thead class="table-dark">
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Units in stock</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let product of products">
+                <td>{{ product.name }}</td>
+                <td>{{ product.unitPrice | currency:'INR' }}</td>
+                <td>{{ product.unitsInStock }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
